@@ -1,0 +1,29 @@
+mat-toolbar{
+	height:150px;
+	background:url("https://dentalartsandwellness.com/wp-content/uploads/2016/10/slate-bg2.jpg?id=572");
+	background-size: cover;
+	color:white;
+}
+.logo{
+	margin-right: 20px;
+	margin-left: 60px;
+	margin-top: 0px;
+	text-align: center;
+}
+.botaoVoltar{
+	text-align: center;
+	font-size: 20px;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+.bt{
+	background: #FFF;
+	color:#000;
+	float: right;
+	margin-left: 20px;
+}
+.nav-item{
+	border:1px solid #fff;
+	padding: 5px;
+	border-radius: 6px
+}

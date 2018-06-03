@@ -1,0 +1,50 @@
+<!-- MENU -->
+<div style="height: 100vh;">
+  <mat-toolbar>
+    <a routerLink="/"><span class="logo"><img src="/assets/img/logo.png"></span></a>
+    <span class="example-spacer"></span>
+    <!-- <div fxLayoutAlign="center center" fxShow="true" fxHide.lt-md="true">
+      <a href="#" mat-button class="nav-item" (click)="tipo('movie')">Filmes</a>
+      <a href="#" mat-button class="nav-item" (click)="tipo('series')">Séries</a>
+    </div> -->
+    <button (click)="goBack()" mat-mini-fab class="bt"><i class="fa fa-arrow-left botaoVoltar"></i></button>
+    <!-- <div fxShow="true" fxHide.gt-sm="true">
+      <a href="#" (click)="sidenav.toggle()"><i class="fa fa-bars" style="color: white"></i></a>
+    </div> -->
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav fxLayout="column">
+      <!-- <div fxLayout="column">
+        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+        <a href="#" mat-button class="nav-item" (click)="tipo('movie')">Filmes</a>
+        <a href="#" mat-button class="nav-item" (click)="tipo('series')">Séries</a>
+      </div> -->
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill style="overflow: hidden;">
+      <div class="container">
+          <ngx-loading [show]="loading"></ngx-loading>
+          <br>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title><h2 class="title">{{movie?.Title}}</h2></mat-card-title>
+              <mat-card-subtitle><p><b>Tipo:</b> {{movie?.Type}}</p></mat-card-subtitle>
+            </mat-card-header>
+              <img mat-card-image src="{{movie?.Poster}}" onError="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdsLWP3Hym4rLxUIVhckpMu717_bDbR3oHSP1TiH0E5n_i-PfX'">
+            <mat-card-content>
+              <p><b>Ano:</b> {{movie?.Year}}</p>
+              <p><b>Duração:</b> {{movie?.Runtime}}</p>
+              <p><b>Diretor:</b> {{movie?.Director}}</p>
+              <p><b>Atores:</b> {{movie?.Actors}}</p>
+              <p><b>Gênero:</b> {{movie?.Genre}}</p>
+              <p><b>Descrição:</b> {{movie?.Plot}}</p>
+              <p><b>Linguagens:</b> {{movie?.Language}}</p>
+              <p><b>Produção:</b> {{movie?.Production}}</p>
+              <p><b>País:</b> {{movie?.Country}}</p>
+            </mat-card-content>
+          </mat-card>
+          <br>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

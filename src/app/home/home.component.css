@@ -1,0 +1,50 @@
+.form-busca{
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-right: 10px;
+}
+.results{
+	background: #FFF;
+}
+.results2{
+	background: #FFF;
+}
+.icon{
+	float: right;
+	line-height: 40px;
+	font-size: 20px;
+}
+.icon:hover{
+	cursor: pointer;
+}
+.poster{
+	border-radius:5px solid #FFF;
+}
+.search-input{
+	border-radius: 3px;
+	padding: 5px;
+	height: 38px;
+	margin-right: 5px;
+	width:200px;
+}
+mat-toolbar{
+	height:150px;
+	background:url("https://dentalartsandwellness.com/wp-content/uploads/2016/10/slate-bg2.jpg?id=572");
+	background-size: cover;
+	color:white;
+}
+.search-results{
+	background:url("https://image.freepik.com/vector-gratis/varias-cosas-de-pelicula-doodle-fondo-transparente_6997-697.jpg");
+	background-repeat: repeat;
+}
+.logo{
+	margin-right: 20px;
+	margin-left: 60px;
+	margin-top: 30px;
+	text-align: center;
+}
+.nav-item{
+	border:1px solid #fff;
+	padding: 5px;
+	border-radius: 6px
+}

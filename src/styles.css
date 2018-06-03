@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.title-filme{
+	margin-left: 5px;
+}
+.icon{
+    float: right;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+a {
+    color: #f5d428;
+    font-weight: bolder;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 5px;
+}
